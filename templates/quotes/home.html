@@ -1,0 +1,14 @@
+<!-- templates/quotes/home.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="uk-heading-divider">Home</h1>
+
+<div>
+    {% for object in object_list %}
+        <div class="uk-card uk-card-default uk-card-body uk-margin">
+            <p>{{ object.quote }}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock content %}
